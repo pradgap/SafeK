@@ -2,10 +2,6 @@
 	padding-left: 30%;
 }
 
-.iconClass{
-	height: 50px;
-	width: 40px;
-}
 
 .modal-title{
 	color: #6A6A6D;
@@ -128,3 +124,21 @@
 .shareClass{
 	padding-top:20%;
 }
+
+
+.footerClass{
+	background-size: 100%;
+	height: 15vh;
+}
+
+.footerNav{
+	margin-left: 15px;
+} 	
+
+.footerSocial{
+	display: inline-block;
+	padding-left: 500px;
+	margin-left: 100px;
+}	
+	
+	
