@@ -11,13 +11,16 @@
 		<script type="text/javascript" src="anchor-scroll.js"></script>
 		<script type="text/javascript" src="facebook.js"></script>
 		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-
+		<script type="text/javascript" async src="twitter.js"></script>
 		<link rel="stylesheet" type="text/css" href="SafeKonnectCSS.css">
+		
 		<title>SafeKonnect | your friend in crisis</title>
+		
 		<meta property="og:title" content="SafeKonnect" />
 		<meta property="og:description" content="SafeKonnect helps you connect to your neighbors and loved ones during crisis." />
 		<meta property="og:url" content="https://safektry.herokuapp.com/#" />
 		<meta property="og:image" content="public/images/family.jpg" />
+		
 	</head>
 
 	<body>
@@ -90,8 +93,14 @@
 			<div class="col-md-4">
 				<h1 id="header-text">Reimagine Help</h1>
 				<p id="header-subtext"> Your Friend in Crisis </p>
-				<span id="link-button"><a href="#learn-more" class="btn">Learn More</a><span>
+				<hr>
+				<ul>
+					<li>
+						<a href="#learn-more" class="btn">Learn More</a>
+					</li>
+				</ul>
 			</div>
+				 
 		</div>
 		
 		<div class="jumbotron secondPageClass">
@@ -105,17 +114,15 @@
 						<li>Do you want your loved ones to know of your situation but cannot call them all at once?</li>
 					</ul>
 				</div>
-				<p> Safekonnect lets you notify your loved ones and neighbors of your emergency situation </p>
-				<p>automatically while you call 911.</p>
+				<p> Safekonnect lets you notify your loved ones and neighbors of</p>
+				<p> your emergency situation automatically while you call 911.</p>
 			</div>
 			<div class="col-md-4 secondPageImgClass">
-				<img src="public/images/phones.png" alt="Crisis Situation" style="width:420px;height:300px;" align="right">
 			</div>
 		</div>
 
 		<div class="jumbotron thirdPageClass">
 			<div class="col-md-4 thirdPageImgClass">
-				<img src="public/images/chrome-alert.png" alt="Crisis Situation" style="width:450px;height:350px;" align="center">
 			</div>
 			
 			<div class="second-container">
@@ -144,7 +151,7 @@
 		<div class="footerClass">
 			<div class="footerSocial">
 				<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=These guys came up with a great app. You should check it out http://bit.ly/1IaG3NQ" data-size="large" target="_blank"><img src="public/images/twitter.png" style="width:40px;height:40px;" data-toggle="modal" data-target="#twitterModal"></a>
-				<a href="https://www.facebook.com/sharer/sharer.php?u=https://safektry.herokuapp.com/#"><img src="public/images/facebook.png" style="width:40px;height:40px;" data-toggle="modal" data-target="#facebookModal"></a>  
+				<a href="javascript:fbShare('https://safektry.herokuapp.com/#', 'SafeKonnect Share', 'SafeKonnect - your friend in crisis', 520, 420)"><img src="public/images/facebook.png" style="width:40px;height:40px;" data-toggle="modal" data-target="#facebookModal"></a>  
 			</div>
 			<div class="footerNav">
 				<ul class="list-inline">
@@ -162,14 +169,6 @@
                 </ul>
                 <p class="copyright text-muted small">Copyright &copy; SafeKonnect 2015. All Rights Reserved</p>
 			</div>
-		</div>
-		<!-- Twitter Model -->
-		<div id="twitterModel">
-		</div>
-		
-		<!-- Facebook Model -->
-		<div id="facebookModel">
-		</div>
 
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</body>
