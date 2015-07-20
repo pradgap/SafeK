@@ -16,6 +16,8 @@
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  position: absolute;
+  margin: auto;
 }
 
 .btn:hover {
@@ -62,9 +64,6 @@
 	text-shadow: 1px 1px black;
 }
 
-#link-button{
-	float: center;
-}
 
 .innerLandingPage{
 	/*height:100vh;*/
@@ -111,6 +110,10 @@
 }
 
 .secondPageImgClass{
+	background-image:url('public/images/phones.png');
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
 	float:left;
     display:inline-block;
     width: -moz-calc(100% - 640px);
@@ -121,9 +124,23 @@
 }
 
 .thirdPageClass{
-	height:50vh;
+	height:60vh;
 	margin-bottom: 0px;
 	padding-top: 20px;
+}
+
+.thirdPageImgClass{
+	background-image:url('public/images/chrome-alert.png');
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	float:left;
+    display:inline-block;
+    width: -moz-calc(100% - 640px);
+    width: -webkit-calc(100% - 640px);
+    width: calc(100% - 640px);
+    height: 100%;
+    padding-top: 50px;
 }
 
 .second-container{
