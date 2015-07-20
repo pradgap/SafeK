@@ -8,6 +8,9 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="anchor-scroll.js"></script>
+		<script type="text/javascript" src="facebook.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="SafeKonnectCSS.css">
 		<title>SafeKonnect | your friend in crisis</title>
@@ -18,24 +21,6 @@
 	</head>
 
 	<body>
-		<script>
-			window.fbAsyncInit = function() {
-				FB.init({
-					appId      : '808793492569691',
-					xfbml      : true,
-					version    : 'v2.4'
-				});
-			};
-			
-			(function(d, s, id){
-				var js, fjs = d.getElementsByTagName(s)[0];
-     			if (d.getElementById(id)) {return;}
-     			js = d.createElement(s); js.id = id;
-     			js.src = "//connect.facebook.net/en_US/sdk.js";
-     			fjs.parentNode.insertBefore(js, fjs);
-     		}(document, 'script', 'facebook-jssdk'));
-     	</script>
-     	
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -61,7 +46,7 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			    <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">About Us</a></li>
+		        <li><a href="file:///Users/manasmudbari/SafeK/SafeKonnect.html#learn-more">About Us</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -77,7 +62,7 @@
 		        <h4 class="modal-title">Sorry, you caught us before we are ready.</h4>
 		      </div>
 		      <div class="modal-body">
-		      	<p class="modal-text">We are working hard to put finishing touches to Safekonnect. Things are going well and we will be ready in no time. If you would like a sneak peek to our private beta before we launch, please provide your email below and we will send you a download link.</p>
+		      	<p class="modal-text">If you would like a sneak peek to our private beta before we launch, please provide your email below and we will send you a download link.</p>
 		       	<form role="form" class="form-horizontal">
 				<div class="form-group">
 					<label for="email" class="control-label col-md-1">Email: </label>
@@ -105,13 +90,14 @@
 			<div class="col-md-4">
 				<h1 id="header-text">Reimagine Help</h1>
 				<p id="header-subtext"> Your Friend in Crisis </p>
+				<span id="link-button"><a href="#learn-more" class="btn">Learn More</a><span>
 			</div>
 		</div>
-
+		
 		<div class="jumbotron secondPageClass">
-
-			<div class="first-container">
-				<h2> Convenient Smart Notification</h2>
+			
+			<div class="first-container" id="learn-more">
+				<h2>Convenient Smart Notification</h2>
 				<div>
 					<ul>
 						<li>Are you alone and going through emergency crisis?</li>
